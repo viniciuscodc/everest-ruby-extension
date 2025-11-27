@@ -14,12 +14,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "everest-ruby.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "everest-ruby.newClass",
         "title": "Everest: New Ruby Class"
+      },
+      {
+        "command": "everest-ruby.newContext",
+        "title": "Everest: New Context"
+      },
+      {
+        "command": "everest-ruby.newTest",
+        "title": "Everest: New Test"
       }
     ],
     "menus": {
@@ -28,9 +32,19 @@
           "command": "everest-ruby.newClass",
           "when": "resourceScheme == 'file'",
           "group": "navigation"
+        },
+        {
+          "command": "everest-ruby.newContext",
+          "when": "resourceScheme == 'file'",
+          "group": "navigation"
+        },
+        {
+          "command": "everest-ruby.newTest",
+          "group": "navigation",
+          "when": "resourceExtname == .rb"
         }
-    ]
-  }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
