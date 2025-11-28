@@ -1,8 +1,13 @@
 {
   "name": "everest-ruby",
+  "publisher": "ViniciusOrtega",
   "displayName": "everest-ruby",
   "description": "Everest utils",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viniciuscodc/everest-ruby-extension"
+  },
   "engines": {
     "vscode": "^1.106.1"
   },
